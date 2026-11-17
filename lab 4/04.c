@@ -1,15 +1,13 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main()
-{
+int main(){
     char str[100];
 
     printf("Enter a string: ");
     scanf("%99s", str);
 
-    for (int i = 0; str[i] != '\0'; i++)
-    {
+    for (int i = 0; str[i] != '\0'; i++){
         str[i] = toupper(str[i]);
     }
 

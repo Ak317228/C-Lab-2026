@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main()
-{
+int main(){
     char str1[100], str2[100], str3[200];
 
     printf("Enter first string: ");

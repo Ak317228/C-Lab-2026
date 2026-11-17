@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
     char name[100];
 
     printf("Enter your name: ");
@@ -9,8 +8,7 @@ int main()
 
     printf("ASCII codes are:\n");
 
-    for (int i = 0; name[i] != '\0' && name[i] != '\n'; i++)
-    {
+    for (int i = 0; name[i] != '\0' && name[i] != '\n'; i++){
         printf("%c = %d\n", name[i], (unsigned char)name[i]);
     }
 

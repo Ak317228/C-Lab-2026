@@ -1,16 +1,14 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main()
-{
+int main(){
     char str[200];
     int lower = 0, upper = 0, digit = 0, special = 0;
 
     printf("Enter a line of text: ");
     fgets(str, sizeof(str), stdin);
 
-    for (int i = 0; str[i] != '\0'; i++)
-    {
+    for (int i = 0; str[i] != '\0'; i++){
         if (islower(str[i]))
             lower++;
         else if (isupper(str[i]))

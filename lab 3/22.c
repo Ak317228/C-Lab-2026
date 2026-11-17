@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int maximum(int a[], int n)
+{
+    int max = a[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        if (a[i] > max)
+            max = a[i];
+    }
+
+    return max;
+}
+
+int main()
+{
+    int a[100], n;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter array elements:\n");
+    for (int i = 0; i < n; i++)
+        scanf("%d", &a[i]);
+
+    printf("Maximum element = %d", maximum(a, n));
+
+    return 0;
+}

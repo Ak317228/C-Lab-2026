@@ -1,21 +1,17 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int main()
-{
+int main(){
     char str[100];
     int count = 0;
 
     printf("Enter a string: ");
     scanf("%99s", str);
 
-    for (int i = 0; str[i] != '\0'; i++)
-    {
+    for (int i = 0; str[i] != '\0'; i++){
         char ch = tolower(str[i]);
 
-        if (ch == 'a' || ch == 'e' || ch == 'i' ||
-            ch == 'o' || ch == 'u')
-        {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u'){
             count++;
         }
     }

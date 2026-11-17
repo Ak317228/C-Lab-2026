@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
     char str[100], old, new;
 
     printf("Enter a string: ");
@@ -13,8 +12,7 @@ int main()
     printf("Enter new character: ");
     scanf(" %c", &new);
 
-    for (int i = 0; str[i] != '\0'; i++)
-    {
+    for (int i = 0; str[i] != '\0'; i++){
         if (str[i] == old)
             str[i] = new;
     }
