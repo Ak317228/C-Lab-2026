@@ -12,7 +12,7 @@ int main(){
 
     interest = (principal * rate * time) /100;
 
-    printf("The simple interest is %f", interest);
+    printf("The simple interest is %.2f", interest);
 
     return 0;
 }
